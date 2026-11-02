@@ -23,7 +23,7 @@ sleep 1
 
 CHECK_PACKAGES() {
 	if dpkg -s "$1" &>/dev/null; then
-		echo -e "${BLUE}[${WHITE}*${BLUE}]${GREEN} $1 NOT INSTALLED. ${RESET}"
+		echo -e "${BLUE}[${WHITE}*${BLUE}]${GREEN} $1 INSTALLED. ${RESET}"
 	else
 		echo -e "${YELLOW}[${MAGENTA}?${YELLOW}]${RED} $1 NOT INSTALLED. ${RESET}"
 		bash -c "pkg install $1"
@@ -32,8 +32,8 @@ CHECK_PACKAGES() {
 	    echo
 }
 
+# CHECKING FOR PYTHON INSTALLATION.
 CHECK_PACKAGES python
-CHECK_PACKAGES python-pip
 
 # INSTALLING "REQUIRMENTS" MODULE.
 bash -c "pip install -r requirements.txt"
