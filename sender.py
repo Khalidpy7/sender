@@ -14,7 +14,9 @@ def banner():
  \___ \|  _| |  \| | | | |  _| | |_) |
   ___) | |___| |\  | |_| | |___|  _ < 
  |____/|_____|_| \_|____/|_____|_| \_\   {_version_} 
-                                      
+
+		__author__ : khalid saif.
+		
 	'''
 tool_banner=banner()
 print(cd(f"{tool_banner}", "magenta", attrs=['bold']))
