@@ -22,15 +22,14 @@ echo -e "${YELLOW}[${MAGENTA}?${YELLOW}]${BLUE} CHECKING DEPENDENCIES. ${RESET}"
 sleep 1
 
 CHECK_PACKAGES() {
-					
-					if dpkg -s "$1" &>/dev/null; then
-										echo -e "${BLUE}[${WHITE}*${BLUE}]${GREEN} $1 NOT INSTALLED. ${RESET}"
-					else
-										echo -e "${YELLOW}[${MAGENTA}?${YELLOW}]${RED} $1 NOT INSTALLED. ${RESET}"
-										bash -c "pkg install $1"
-										echo 
-					fi
-					echo
+	if dpkg -s "$1" &>/dev/null; then
+		echo -e "${BLUE}[${WHITE}*${BLUE}]${GREEN} $1 NOT INSTALLED. ${RESET}"
+	else
+		echo -e "${YELLOW}[${MAGENTA}?${YELLOW}]${RED} $1 NOT INSTALLED. ${RESET}"
+		bash -c "pkg install $1"
+		echo 
+	fi
+	    echo
 }
 
 CHECK_PACKAGES python
