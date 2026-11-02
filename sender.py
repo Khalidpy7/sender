@@ -14,8 +14,6 @@ def banner():
  \___ \|  _| |  \| | | | |  _| | |_) |
   ___) | |___| |\  | |_| | |___|  _ < 
  |____/|_____|_| \_|____/|_____|_| \_\   {_version_} 
-
-		__author__ : khalid saif.
 		
 	'''
 tool_banner=banner()
@@ -28,7 +26,8 @@ print()
 
 # INSTRUCTIONS TO USE THIS TOOL
 print(cd("[!] INSTRUCTION TO USE.", "cyan", attrs=['bold']))
-#print()
+print(cd("[%] DEVELOPER : Khalid Saif.", "yellow", attrs=['bold']))
+print()
 print(cd('''
   1). OPEN EMAIL APP & ENABLE TWO FACTOR AUTHENTICATION.
   2). EMAIL > SECURITY > APP PASSWORD
