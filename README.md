@@ -4,6 +4,8 @@
 
 **A simple Python-based Gmail email sender**
 
+[![Ownership](https://img.shields.io/badge/Owner-Khalid.Saif-red?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 [![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com/Khalidpy7/sender)
 [![Language](https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green?style=for-the-badge)](https://github.com/Khalidpy7/sender)
